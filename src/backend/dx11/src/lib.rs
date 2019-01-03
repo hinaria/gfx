@@ -807,7 +807,7 @@ impl hal::queue::RawCommandQueue<Backend> for CommandQueue {
     {
         for (swapchain, _idx) in swapchains {
             unsafe {
-                swapchain.borrow().dxgi_swapchain.Present(1, 0);
+                swapchain.borrow().dxgi_swapchain.Present(0, 0);
             }
         }
 
