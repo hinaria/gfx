@@ -42,6 +42,12 @@ use std::{mem, ptr};
 
 use native::descriptor;
 
+pub use resource::Framebuffer;
+pub use resource::RenderPass;
+pub use resource::Semaphore;
+pub use window::Surface;
+pub use window::Swapchain;
+
 pub(crate) struct HeapProperties {
     pub page_property: d3d12::D3D12_CPU_PAGE_PROPERTY,
     pub memory_pool: d3d12::D3D12_MEMORY_POOL,
